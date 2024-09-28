@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 # set the page title 
-st.set_page_config(page_title="Sentiment Analysis ",page_icon="🥰")
+st.set_page_config(page_title="Sentiment Analysis ",page_icon="✅")
 
 # app title and description 
 st.title("Sentiment Analysis ")
@@ -97,7 +97,7 @@ else:
         if samples.empty:
             st.warning("Sample data file is empty.")
         else:
-            st.dataframe(samples[['Source', 'Sentiment', 'Text']].sample(min(5, len(samples))))
+            st.dataframe(samples[['Source', 'Sentiment', 'Text']].sample(min(10, len(samples))))
     except Exception as e:
         st.error(f"Error loading sample data: {e}")
 
