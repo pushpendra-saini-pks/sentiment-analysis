@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 import os 
 import joblib
-from pathlib import path 
+from pathlib import Path 
 
 
 # set the page title 
@@ -13,7 +13,7 @@ st.title("Sentiment Analysis ")
 st.write("This app predicts the sentiment of text based on different sources.")
 
 # define the path to the models directory using pathlib for cross.platform compatibility 
-models_dir = path('src/models')
+models_dir = Path('src/models')
 
 # Check if the models directory exists
 if not models_dir.exists():
