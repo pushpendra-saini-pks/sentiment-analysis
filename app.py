@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 # set the page title 
-st.set_page_config(page_title="Sentiment Analysis ",page_icon="✅")
+st.set_page_config(page_title="Sentiment Analysis ",page_icon=":shamrock:")
 
 # app title and description 
 st.title("Sentiment Analysis ")
